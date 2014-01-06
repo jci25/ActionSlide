@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectable_background_cardbank"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ff33b5e5" />
+
+    <LinearLayout
+        android:id="@+id/img_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/cnhImg"
+            android:background="@drawable/selectable_background_cardbank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:onClick="imageClickHandler"
+            android:scaleType="fitCenter" />
+        
+
+</LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#ff33b5e5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/copyImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selectable_background_cardbank"
+            android:clickable="true"
+            android:onClick="extraClickHandler"
+            android:src="@android:drawable/ic_menu_crop" />
+
+        <ImageView
+            android:id="@+id/saveImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selectable_background_cardbank"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:clickable="true"
+            android:onClick="downloadClickHandler"
+            android:src="@android:drawable/ic_menu_save" />
+
+        <ImageView
+            android:id="@+id/shareImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selectable_background_cardbank"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:onClick="shareClickHandler"
+            android:src="@android:drawable/ic_menu_share" />
+
+    </RelativeLayout>
+
+</LinearLayout>
